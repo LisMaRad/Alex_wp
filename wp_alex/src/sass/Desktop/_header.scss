@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0em 3em;
+    
+    h1{
+        color: $primaryColor;
+        font-size: $fontSizeH1;
+        margin:0;
+    }
+    ul{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+        text-align: center;
+        li{
+            
+            &.current_page_item a{
+                color: $primaryColor;
+                border-bottom: 1px solid $primaryColor;
+            }
+            a{
+                margin:1em;
+                font-size: 1.3em;
+                text-decoration: none;
+                color:black;
+                justify-content: center;  
+                &:hover{
+                    color: $primaryColor;
+                    border-bottom: 1px solid $primaryColor;
+                }
+            }
+        }
+    }
+    button{
+        display: none;
+    }
+        
+}
+    
+
+    
+        

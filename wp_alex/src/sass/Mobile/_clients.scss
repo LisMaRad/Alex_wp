@@ -1,0 +1,46 @@
+img{
+    width: 100%;
+}
+cite{
+    font-style: normal;
+    font-size: 12px;
+}
+blockquote{
+    margin: 0;
+    font-size: 15px;
+}
+span{
+    margin-top:20px;
+}
+
+p{
+    margin-top: 5px;
+    font-size: 12px;
+}
+#clients div{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: $borderRadius;
+    article{
+        display:grid;
+        padding: 20px;
+    }
+    article:first-child{
+        background-color: $backgroundYellow;
+    }
+    article:nth-child(2){
+        background-color: $backgroundBlue;
+    }
+    article:nth-child(3){
+        background-color: $backgroundGreen;
+    }
+    .quotes{
+        background-color: $primaryColor;
+        grid-template-columns: repeat(2, 1fr);
+        img{
+            grid-column: 1 / 2; 
+            width: 50%;
+            height: auto;
+        }
+    }
+}

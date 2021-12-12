@@ -1,0 +1,36 @@
+#services ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    li{
+        text-align: center;
+        list-style: none;
+        border-radius: $borderRadius;
+        &:nth-child(1){
+            background-color: $backgroundYellow;
+        }
+        &:nth-child(2){
+            background-color: $backgroundBlue;
+        }
+        &:nth-child(3){
+            background-color: $backgroundGreen;
+        }
+        a{
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: $primaryColor;
+            padding: 30px;
+            line-height: 50px;
+            font-size: $fontSizeH4;
+            img{
+                width: 15em;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+

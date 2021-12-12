@@ -1,0 +1,12 @@
+{
+  "name": "wp_alex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rsync -vaE --progress ./src/php/ ./public/wp-content/themes/mini && sass -q ./src/sass/style.scss ./public/wp-content/themes/mini/style.css && rsync -vaE --progress ./src/images/ ./public/wp-content/themes/mini/images && rsync -vaE --progress ./src/favicons/ ./public/wp-content/themes/mini && rsync -vaE --progress ./src/fonts/ ./public/wp-content/themes/mini/fonts && esbuild ./src/js/script.js --bundle --outfile=./public/wp-content/themes/mini/script.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

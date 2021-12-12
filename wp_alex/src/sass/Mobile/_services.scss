@@ -1,0 +1,49 @@
+#services {
+    h2{
+        font-size: $fontSizeH2Media;
+        color: black;
+    }
+    ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding:0;
+    li{
+        text-align: center;
+        list-style: none;
+        border-radius: $borderRadius;
+        width: 100%;
+        &:nth-child(1){
+            background-color: $backgroundYellow;
+        }
+        &:nth-child(2){
+            background-color: $backgroundBlue;
+        }
+        &:nth-child(3){
+            background-color: $backgroundGreen;
+        }
+        a{
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: $primaryColor;
+            padding: 30px;
+            line-height: 50px;
+            align-items: center;
+
+            span{
+                font-size: $fontSizeH4Media;
+                color:black;
+            }
+            img{
+                width: 15em;
+                height: auto;
+            }
+        }
+    }
+}
+}
+
+
+

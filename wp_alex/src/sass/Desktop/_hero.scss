@@ -1,0 +1,48 @@
+#hero{
+    width: 100%;
+    height:fit-content;
+    background-image: url('images/illuminated-keyboard-1242287.jpg');
+    background-size: cover;
+    display:flex;
+    justify-content: flex-end;
+
+    #heroText{
+        display: flex;
+        height:100%;
+        flex-direction: column;
+        width:60%;
+        margin: 4em;
+
+        h2{
+            color:$primaryColor;
+            font-size: 3em;
+            line-height: 1.5em;
+            margin: 0px 0px 5px 0px;
+                  
+
+            span{
+                background-color: white;
+                padding: 3px 15px;
+                width: fit-content;
+                -webkit-box-decoration-break: clone;
+            }
+    }
+    button{
+                font-family: $font;
+                color: white;
+                padding: 10px;
+                font-size: 1.5em;
+                background-color: #65b85a;
+                border: #65b85a ;
+                border-radius: 5px;
+                width: fit-content;
+        }
+    }
+}
+#thumbnail{
+        img{
+    width: 100%;
+    height: auto;
+        }
+}
+

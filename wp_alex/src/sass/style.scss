@@ -1,0 +1,63 @@
+$primaryColor: #009ee3;
+$backgroundYellow: #FFFAD8;
+$backgroundBlue: #C6EFFC;
+$backgroundGreen: #D8EDD6;
+$backgroundRed: #FADDD3;
+$fontSizeH1: 40px;
+$fontSizeH2: 35px;
+$fontSizeH3: 13px;
+$fontSizeH4: 20px;
+$font: "slabo";
+$borderRadius: 6px;
+$screenWidthMobileMax: 800px;
+$screenWidthDesktopMin:801px;
+
+$fontSizeH1Media: 40px;
+$fontSizeH2Media: 30px;
+$fontSizeH3Media: 15px;
+$fontSizeH4Media: 20px;
+
+body{
+    line-height: 1.5;
+}
+
+@font-face {
+    font-family: slabo;
+    src: url("fonts/slabo-13px-v8-latin-ext_latin/slabo-13px-v8-latin-ext_latin-regular.ttf");
+}
+h2{
+    color: $primaryColor;
+    font-size: $fontSizeH2;
+}
+.max-width-container{
+        max-width: 80rem;
+        margin: 0 auto;
+        padding: 20px;
+        justify-content: center;
+    }
+
+@media (max-width: $screenWidthMobileMax) {
+    h2{
+        font-size: 2em;
+        color: black;
+    }
+
+    @import "reset";
+    @import "Mobile/hero";
+    @import "Mobile/header";
+    @import "Mobile/clients";
+    @import "Mobile/services";
+    @import "Mobile/news";
+    @import "Mobile/footer";
+}
+
+@media (min-width: $screenWidthDesktopMin) {
+
+    @import "reset";
+    @import "Desktop/header";
+    @import "Desktop/clients";
+    @import "Desktop/footer";
+    @import "Desktop/hero";
+    @import "Desktop/news";
+    @import "Desktop/services";
+}

@@ -1,0 +1,579 @@
+body {
+  line-height: 1.5;
+}
+
+@font-face {
+  font-family: slabo;
+  src: url("../fonts/slabo-13px-v8-latin-ext_latin/slabo-13px-v8-latin-ext_latin-regular.ttf");
+}
+h2 {
+  color: #009ee3;
+  font-size: 35px;
+}
+
+.max-width-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 2em;
+    color: black;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "slabo";
+    width: 100%;
+  }
+
+  #hero {
+    width: 100%;
+    height: fit-content;
+    background-image: url("../images/illuminated-keyboard-1242287.jpg");
+    background-size: cover;
+    display: flex;
+  }
+  #hero #heroText {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    margin: 2em 1em;
+  }
+  #hero #heroText h2 {
+    color: #009ee3;
+    font-size: 30px;
+    line-height: 1.5em;
+    margin: 0px 0px 5px 0px;
+  }
+  #hero #heroText h2 span {
+    background-color: white;
+    padding: 3px 15px;
+    -webkit-box-decoration-break: clone;
+  }
+  #hero #heroText button {
+    font-family: "slabo";
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: #65b85a;
+    border: #65b85a;
+    border-radius: 5px;
+    width: fit-content;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+    width: auto;
+  }
+  header h1 {
+    color: #009ee3;
+    font-size: 40px;
+    margin: 0;
+  }
+  header nav {
+    position: absolute;
+    top: -0.3rem;
+    left: 0;
+    right: 0;
+    transform: translateY(-300px);
+    transition: transform 200ms ease-in-out;
+  }
+  header nav.is-active {
+    transform: translateY(80px);
+  }
+  header ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+  }
+  header ul li {
+    padding: 15px 0 15px 0;
+    border-top: 1px black solid;
+    border-width: 100%;
+    width: 100%;
+  }
+  header ul li:hover {
+    background-color: #009ee3;
+  }
+  header ul li a {
+    margin: 1em;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+  }
+  header ul li a:hover {
+    color: white;
+  }
+  header ul li a.active {
+    color: #009ee3;
+  }
+  header ul li a.active:hover {
+    color: white;
+  }
+  header button {
+    border: none;
+    background-color: white;
+  }
+  header .hamburger-inner, header .hamburger-inner::before, header .hamburger-inner::after {
+    background-color: #009ee3;
+  }
+  header span {
+    margin-top: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  cite {
+    font-style: normal;
+    font-size: 12px;
+  }
+
+  blockquote {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  span {
+    margin-top: 20px;
+  }
+
+  p {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+
+  #clients div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: 6px;
+  }
+  #clients div article {
+    display: grid;
+    padding: 20px;
+  }
+  #clients div .tina {
+    background-color: #FFFAD8;
+  }
+  #clients div .tom {
+    background-color: #C6EFFC;
+  }
+  #clients div .mueller {
+    background-color: #D8EDD6;
+  }
+  #clients div .quotes {
+    background-color: #009ee3;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #clients div .quotes img {
+    grid-column: 1/2;
+    width: 50%;
+  }
+
+  #services h2 {
+    font-size: 30px;
+    color: black;
+  }
+  #services ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 0;
+  }
+  #services ul li {
+    text-align: center;
+    list-style: none;
+    border-radius: 6px;
+    width: 100%;
+  }
+  #services ul li:nth-child(1) {
+    background-color: #FFFAD8;
+  }
+  #services ul li:nth-child(2) {
+    background-color: #C6EFFC;
+  }
+  #services ul li:nth-child(3) {
+    background-color: #D8EDD6;
+  }
+  #services ul li a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #009ee3;
+    padding: 30px;
+    line-height: 50px;
+    align-items: center;
+  }
+  #services ul li a span {
+    font-size: 20px;
+    color: black;
+  }
+  #services ul li a img {
+    width: 15em;
+  }
+
+  #news ul {
+    background-color: #FADDD3;
+    border-radius: 6px;
+    padding: 10px;
+  }
+  #news ul li {
+    list-style: none;
+    padding: 5px;
+    font-size: 1rem;
+  }
+  #news ul li a {
+    text-decoration: none;
+    color: #009ee3;
+  }
+
+  footer {
+    background-color: #009ee3;
+    color: white;
+    padding: 1em;
+    position: relative;
+  }
+  footer h3 {
+    font-size: 15px;
+  }
+  footer h3#creators {
+    width: 60%;
+  }
+  footer h3#copyright {
+    margin: 0;
+  }
+  footer nav {
+    right: 1em;
+    top: 1em;
+  }
+  footer nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+  footer nav ul li {
+    padding: 0.5em;
+  }
+  footer nav ul li:nth-child(1) {
+    padding-left: 0;
+  }
+  footer nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+  }
+  footer .noMarginTop {
+    margin-top: 0;
+    padding-left: 10px;
+  }
+  footer .noMarginBottom {
+    margin-bottom: 5px;
+  }
+  footer ul {
+    margin: 0 10px 0 10px;
+  }
+  footer ul li {
+    word-wrap: break-word;
+  }
+}
+@media (min-width: 801px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "slabo";
+    width: 100%;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0em 3em;
+  }
+  header h1 {
+    color: #009ee3;
+    font-size: 40px;
+    margin: 0;
+  }
+  header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    text-align: center;
+  }
+  header ul a {
+    margin: 1em;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+  }
+  header ul a:hover {
+    border-bottom: 1px solid #009ee3;
+    color: #009ee3;
+  }
+  header ul a.active {
+    color: #009ee3;
+  }
+  header button {
+    display: none;
+  }
+
+  #clients img {
+    width: 90%;
+    object-fit: cover;
+    padding: 5% 5% 5%;
+  }
+  #clients cite {
+    font-style: normal;
+    padding: 0 10px;
+  }
+  #clients p {
+    padding: 0 10px;
+    margin: 0;
+  }
+  #clients blockquote {
+    margin: 0;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  #clients div {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border-radius: 6px;
+  }
+  #clients div article {
+    display: grid;
+  }
+  #clients div .tina {
+    background-color: #FFFAD8;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column: 1/4;
+    grid-row: 1/4;
+  }
+  #clients div .tina img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 95%;
+  }
+  #clients div .tina .info {
+    background: inherit;
+    grid-column: 1/3;
+    grid-row: 2/4;
+    z-index: 2;
+  }
+  #clients div .tina blockquote {
+    background: inherit;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    z-index: 2;
+  }
+  #clients div .tom {
+    background-color: #C6EFFC;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column: 2/5;
+    grid-row: 1/-1;
+    text-align: right;
+  }
+  #clients div .tom img {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    height: 95%;
+  }
+  #clients div .tom .info {
+    background-color: inherit;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  #clients div .tom blockquote {
+    background-color: inherit;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    margin: 30% 0;
+  }
+  #clients div .mueller {
+    background-color: #D8EDD6;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column: 5/9;
+    grid-row: 1/4;
+  }
+  #clients div .mueller img {
+    grid-column: 2/5;
+    grid-row: 1/3;
+    height: 95%;
+  }
+  #clients div .mueller .info {
+    grid-column: 1/5;
+    grid-row: 3/4;
+    text-align: right;
+  }
+  #clients div .mueller .info blockquote {
+    margin-top: 5em;
+  }
+  #clients div .quotes {
+    background-color: #009ee3;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column: 5/6;
+    grid-row: 1/3;
+  }
+  #clients div .quotes img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  footer {
+    background-color: #009ee3;
+    color: white;
+    padding: 1em;
+    position: relative;
+    font-size: 15px;
+  }
+  footer h3 {
+    font-size: 1em;
+  }
+  footer h3#creators {
+    width: 60%;
+  }
+  footer nav {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+  }
+  footer nav ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+  }
+  footer nav ul li {
+    padding: 0.5em;
+  }
+  footer nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+  }
+  footer .noMarginTop {
+    margin-top: 0;
+  }
+  footer .noMarginBottom {
+    margin-bottom: 5px;
+  }
+
+  #hero {
+    width: 100%;
+    height: fit-content;
+    background-image: url("../images/illuminated-keyboard-1242287.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+  }
+  #hero #heroText {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    width: 60%;
+    margin: 4em;
+  }
+  #hero #heroText h2 {
+    color: #009ee3;
+    font-size: 3em;
+    line-height: 1.5em;
+    margin: 0px 0px 5px 0px;
+  }
+  #hero #heroText h2 span {
+    background-color: white;
+    padding: 3px 15px;
+    width: fit-content;
+    -webkit-box-decoration-break: clone;
+  }
+  #hero #heroText button {
+    font-family: "slabo";
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: #65b85a;
+    border: #65b85a;
+    border-radius: 5px;
+    width: fit-content;
+  }
+
+  #news ul {
+    background-color: #FADDD3;
+    border-radius: 6px;
+    padding: 10px;
+  }
+  #news ul li {
+    list-style: none;
+    padding: 5px;
+  }
+  #news ul li a {
+    text-decoration: none;
+    color: #009ee3;
+  }
+
+  #services ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  #services ul li {
+    text-align: center;
+    list-style: none;
+    border-radius: 6px;
+  }
+  #services ul li:nth-child(1) {
+    background-color: #FFFAD8;
+  }
+  #services ul li:nth-child(2) {
+    background-color: #C6EFFC;
+  }
+  #services ul li:nth-child(3) {
+    background-color: #D8EDD6;
+  }
+  #services ul li a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #009ee3;
+    padding: 30px;
+    line-height: 50px;
+    font-size: 20px;
+  }
+  #services ul li a img {
+    width: 15em;
+  }
+}
+/* colors not correct yet
+ */
+
+/*# sourceMappingURL=style.css.map */
