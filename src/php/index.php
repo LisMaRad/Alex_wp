@@ -52,24 +52,14 @@
 
     </header>
 
-    <?php if (is_front_page()){ ?>
-        <section id="hero">
+   
+    <section id="hero">
+        <?php the_post_thumbnail(); ?>
         <div id="heroText">
-            <h2>
-                <span>Glänzende Ideen für leuchtende Augen</span>
-            </h2>
+            <h2><span>Glänzende Ideen für leuchtende Augen</span></h2>
             <button>Angebot einholen</button>
         </div>
-        <?php }
-        else{ ?>
-        <section id="thumbnail">
-        <?php the_post_thumbnail(); ?>
     </section>
-       <?php } ?>
-    
-        </section>
-
-
 
     <main>
         <section id="maincontents" class="max-width-container">
@@ -169,15 +159,7 @@ wp_reset_postdata();?>
     <footer>
         <h3 id="copyright">© Alex Mayer 2020</h3>
         <nav>
-            <ul>
-                <li>
-                    <a href="#">Impressum</a>
-                </li>
-                <li> | </li>
-                <li>
-                    <a href="#">Datenschutzerklärung</a>
-                </li>
-            </ul>
+        <?php wp_nav_menu(array ('theme_location' => 'footer-menu')); ?>
         </nav>
         <h3 id="creators">Demo-Wordpress-Seite im Rahmen der LV ‚Content Mangagement Systeme‘ an der FH Salzburg von
             Vanessa Reiter und Lisa Rader</h3>

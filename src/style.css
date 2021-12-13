@@ -33,34 +33,27 @@ h2 {
 
   #hero {
     width: 100%;
+    height: fit-content;
+    background-image: url("images/illuminated-keyboard-1242287.jpg");
+    background-size: cover;
     display: flex;
-    justify-content: flex-end;
-    position: relative;
-  }
-  #hero img {
-    width: 100%;
-    height: auto;
   }
   #hero #heroText {
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
+    display: flex;
     height: 100%;
+    width: 100%;
     flex-direction: column;
-    width: 60%;
-    margin: 4em;
+    margin: 2em 1em;
   }
   #hero #heroText h2 {
     color: #009ee3;
-    font-size: 2em;
+    font-size: 30px;
     line-height: 1.5em;
     margin: 0px 0px 5px 0px;
   }
   #hero #heroText h2 span {
     background-color: white;
     padding: 3px 15px;
-    width: fit-content;
     -webkit-box-decoration-break: clone;
   }
   #hero #heroText button {
@@ -506,19 +499,14 @@ h2 {
 
   #hero {
     width: 100%;
+    height: fit-content;
+    background-image: url("images/illuminated-keyboard-1242287.jpg");
+    background-size: cover;
     display: flex;
     justify-content: flex-end;
-    position: relative;
-  }
-  #hero img {
-    width: 100%;
-    height: auto;
   }
   #hero #heroText {
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
+    display: flex;
     height: 100%;
     flex-direction: column;
     width: 60%;
@@ -547,6 +535,9 @@ h2 {
     width: fit-content;
   }
 
+  #thumbnail {
+    border: red solid 1px;
+  }
   #news ul {
     background-color: #FADDD3;
     border-radius: 6px;

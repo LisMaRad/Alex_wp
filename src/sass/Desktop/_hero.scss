@@ -1,13 +1,18 @@
 #hero{
     width: 100%;
-    height:fit-content;
-    background-image: url('images/illuminated-keyboard-1242287.jpg');
-    background-size: cover;
     display:flex;
     justify-content: flex-end;
+    position: relative;
+    img{
+        width: 100%;
+        height: auto;
+    }
 
     #heroText{
-        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-50%, -50%);
         height:100%;
         flex-direction: column;
         width:60%;
@@ -39,10 +44,3 @@
         }
     }
 }
-#thumbnail{
-        img{
-    width: 100%;
-    height: auto;
-        }
-}
-
