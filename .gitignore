@@ -1,3 +1,4 @@
 node_modules
 public/wp-config.php
 public/wp-content/uploads
+.DS_Store
