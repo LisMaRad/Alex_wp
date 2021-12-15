@@ -10,13 +10,11 @@
 
     #heroText{
         position: absolute;
-        top: 50%;
-        left: 70%;
         transform: translate(-50%, -50%);
         height:100%;
         flex-direction: column;
         width:60%;
-        margin: 4em;
+        margin: 7em 0;
 
         h2{
             color:$primaryColor;
