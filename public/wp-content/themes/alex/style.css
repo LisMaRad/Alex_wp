@@ -522,7 +522,7 @@ h2 {
     height: 100%;
     flex-direction: column;
     width: 60%;
-    margin: 4em;
+    margin: 4em 0;
   }
   #hero #heroText h2 {
     color: #009ee3;
