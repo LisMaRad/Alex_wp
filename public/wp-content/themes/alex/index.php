@@ -54,9 +54,10 @@
 
    
     <section id="hero">
+    <?php $herotext = get_field( "herotext" ); ?>
         <?php the_post_thumbnail(); ?>
         <div id="heroText">
-            <h2><span>Glänzende Ideen für leuchtende Augen</span></h2>
+            <h2><span><?php echo $herotext?></span></h2>
             <button>Angebot einholen</button>
         </div>
     </section>
